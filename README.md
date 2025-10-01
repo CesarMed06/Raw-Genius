@@ -1,66 +1,59 @@
-# Detrás del Conocimiento
+# Behind Knowledge
 
-**Proyecto educativo de desarrollo web para visibilizar figuras científicas históricamente invisibilizadas**
-
----
-
-## 📋 Tabla de Contenidos
-
-1. [Descripción del Proyecto](#-descripción-del-proyecto)
-2. [Objetivos de Aprendizaje](#-objetivos-de-aprendizaje)
-3. [Características del Proyecto](#-características-del-proyecto)
-4. [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-5. [Estructura del Proyecto](#-estructura-del-proyecto)
-6. [Instalación y Uso](#-instalación-y-uso)
-7. [Proceso de Desarrollo](#-proceso-de-desarrollo)
-8. [Funcionalidades Implementadas](#-funcionalidades-implementadas)
-9. [Diseño Responsive](#-diseño-responsive)
-10. [Competencias Desarrolladas](#-competencias-desarrolladas)
-11. [Estado del Proyecto](#-estado-del-proyecto)
-12. [Créditos](#-créditos)
+**Educational web development project to highlight historically overlooked scientific figures**
 
 ---
 
-## 📖 Descripción del Proyecto
+## 📖 Project Description
 
-Este proyecto consiste en crear una **página web estática** que muestre tarjetas interactivas con información sobre descubrimientos científicos importantes y las personas que los hicieron posibles [web:21][web:22]. El objetivo principal es dar visibilidad a aquellas figuras que, a pesar de su contribución fundamental, no siempre han recibido el reconocimiento merecido por razones de género, raza u orientación sexual.
+This project consists of creating a **static website** that displays interactive cards with information about important scientific discoveries and the people who made them possible.  
+The main goal is to give visibility to those figures who, despite their fundamental contributions, have not always received the recognition they deserved due to gender, race, or sexual orientation.  
 
-### 🎯 Contexto Educativo
-Proyecto desarrollado como parte del **Ciclo Superior de Desarrollo de Aplicaciones Web (DAW)**, integrando múltiples herramientas y metodologías del mundo IT para crear una aproximación práctica al desarrollo web profesional [web:24][web:27].
-
----
-
-## 🎓 Objetivos de Aprendizaje
-
-### Competencias Técnicas Desarrolladas
-- **Maquetación de aplicación desktop** utilizando HTML5 y CSS3
-- **Creación de página web estática** con diseño responsive
-- **Implementación de componentes** aplicando Atomic Design
-- **Uso de herramientas profesionales** de diseño y desarrollo
-
-### Herramientas Utilizadas
-- **Figma**: Diseño de interfaz y prototipado
-- **Visual Studio Code**: Editor de código principal
-- **Trello**: Gestión y organización del proyecto
+### Educational Context
+Project developed as part of the **Higher Vocational Training in Web Application Development (DAW)**, integrating multiple tools and methodologies from the IT world to create a practical approach to professional web development.  
 
 ---
 
-## ✨ Características del Proyecto
+## 🎓 Learning Objectives
 
-### Estructura Principal
-- **Navegación (Nav)**: Menú de navegación responsive
-- **Título del proyecto**: Presentación clara del propósito
-- **Contenido principal**: 4 tarjetas informativas interactivas
-- **Footer**: Información del proyecto y enlaces adicionales
+- Create a Figma account  
+- Work with components, applying Atomic Design  
+- Build the website using HTML5 and CSS3  
 
-### Funcionalidades Clave
-- **Cards con efecto flip** al hacer hover
-- **Animaciones suaves** en las transiciones
-- **Diseño completamente responsive**
-- **Interactividad** sin necesidad de JavaScript complejo
+### Technical Skills Developed
+- **Desktop application layout** using HTML5 and CSS3  
+- **Creation of a static website** with responsive design  
+- **Component implementation** applying Atomic Design  
+- **Use of professional tools** for design and development  
+
+### Tools Used
+- **Figma**: Interface design and prototyping  
+- **Visual Studio Code**: Main code editor  
+- **Trello**: Project management and organization  
 
 ---
 
-## 💻 Tecnologías Utilizadas
+## 🔑 Project Features
 
-### Frontend
+### Main Structure
+- **Navigation (Nav)**: Responsive navigation menu  
+- **Project title**: Clear presentation of the purpose  
+- **Main content**: 4 interactive information cards  
+- **Footer**: Project information and additional links  
+
+### Key Functionalities
+- **Flip card effect** on hover  
+- **Smooth animations** during transitions  
+- **Fully responsive design**  
+- **Interactivity** without complex JavaScript  
+
+---
+
+## Project Structure
+
+┣ index.html
+┣ styles.css
+┣ assets
+┃ ┣ images
+┃ ┗ icons
+┗ README.md
