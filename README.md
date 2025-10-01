@@ -51,9 +51,6 @@ Project developed as part of the **Higher Vocational Training in Web Application
 
 ## Project Structure
 
-┣ index.html
-┣ styles.css
-┣ assets
-┃ ┣ images
-┃ ┗ icons
-┗ README.md
+<img width="378" height="176" alt="image" src="https://github.com/user-attachments/assets/311d4c9e-78b8-4878-9502-4a3bd6123357" />
+
+
