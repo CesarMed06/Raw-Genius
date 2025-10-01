@@ -19,7 +19,90 @@ footer{
 
 a{text-decoration: none;}
 
-.container_social{}
+.container_social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.facebook{  
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.041);
+    border-radius: 100vmax;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.facebook img{  
+    width: 40px;
+}
+
+.insta{  
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.041);
+    border-radius: 100vmax;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.insta img{  
+    width: 40px;
+}
+
+.tiktok{  
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.041);
+    border-radius: 100vmax;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.tiktok img{  
+    width: 40px;
+}
+
+.twitter{  
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.041);
+    border-radius: 100vmax;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.twitter img{  
+    width: 40px;
+}
 
 .container_footer{
     display: flex;
