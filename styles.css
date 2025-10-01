@@ -30,28 +30,78 @@ body {
   justify-content: center;
   gap: 28px;
   flex-wrap: wrap;
-  
+  align-items: flex-start;
+
 }
 
 .card {
 
   width: 330px;
   height: 560px;
+  perspective: 1000px;
+  flex-shrink: 0;
+
+}
+
+.card-inner {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+}
+
+.card:hover .card-inner {
+
+  transform: rotateY(180deg);
+
+}
+
+.card-front,
+.card-back {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   border-radius: 30px;
   border: 4px solid #e0f0fa;
   box-sizing: border-box;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+
+}
+
+.card-front {
+
   background: #7e97a5;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
-  overflow: hidden;
-  position: relative;
   padding: 24px;
+  position: absolute;
 
 }
 
-.card img {
+.card-front::before {
+
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(126, 151, 165, 0.3) 40%, rgba(126, 151, 165, 0.95) 100%);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 26px;
+
+}
+
+.card-front img {
 
   position: absolute;
   top: 0;
@@ -67,11 +117,11 @@ body {
 .card-name {
 
   color: #fff;
-  font-family: 'Jost', Arial, sans-serif;
-  font-weight: 500;
+  font-family: 'Kumbh Sans', Arial, sans-serif;
+  font-weight: 400;
   font-size: 1.35rem;
   margin: 0 0 7px 0;
-  z-index: 1;
+  z-index: 2;
   position: relative;
 
 }
@@ -79,12 +129,13 @@ body {
 .card-desc {
 
   color: #fff;
-  font-family: 'Kumbh Sans', Arial, sans-serif;
-  font-size: 1.02rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.95rem;
   font-weight: 400;
   margin: 0 0 16px 0;
-  line-height: 1.28;
-  z-index: 1;
+  line-height: 1.35;
+  z-index: 2;
   position: relative;
 
 }
@@ -93,30 +144,43 @@ body {
 
   width: 100%;
   padding: 12px 18px;
-  background: rgba(126, 151, 165, 0.95);
   color: #2C2C2C;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: none;
   border-radius: 30px;
   font-size: 20.23px;
-  font-family: 'Jost', Arial, sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 500;
   letter-spacing: 0.2px;
   cursor: pointer;
   box-sizing: border-box;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
   line-height: 1.4;
-  z-index: 1;
+  z-index: 2;
   position: relative;
+  outline: none;
+  background: rgba(255, 255, 255, 0.041);
+  border-radius: 100vmax;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
 .learn-btn:hover {
 
-  background: rgba(126, 151, 165, 1);
-  border-color: rgba(255, 255, 255, 0.8);
+  opacity: 0.9;
+
+}
+
+.learn-btn:focus {
+
+  outline: none;
+  box-shadow: none;
 
 }
 
@@ -133,4 +197,75 @@ body {
   align-items: center;
   font-weight: 400;
 
+}
+
+.card-back {
+
+  background: rgba(126, 151, 165, 0.95);
+  backdrop-filter: blur(10px);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  position: absolute;
+
+}
+
+.card-back h3 {
+
+  color: #fff;
+  font-family: 'Kumbh Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+
+}
+
+.card-back p {
+
+  color: #fff;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 400;
+  flex-grow: 1;
+
+}
+
+.share-section {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.share-text {
+
+  color: #fff;
+  font-family: 'Kumbh Sans', Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-align: center;
+
+}
+
+.ig-icon {
+
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+}
+
+.ig-icon:hover {
+
+  transform: scale(1.1);
+  
 }
