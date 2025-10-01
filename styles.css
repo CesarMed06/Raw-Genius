@@ -1,13 +1,91 @@
-body {
+body {  
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
     background: #414C50;
     background-image: linear-gradient(to bottom left, #414C50, #94ADB6);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    border-radius: 100vmax;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px auto;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.041);
+    height: 55px;
+    min-height: 50px;
+    overflow: hidden;
+}
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #2d2d2d;
+    border-radius: 100vmax;
+    padding: 0 20px 0 5px;
+    margin: 0;
+    width: 120px;              /* Ancho fijo */
+    height: 52px;
+    min-width: 140px;
+    padding: 0 20px 0 25px;
+
+}
+
+.logo-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 28px;
+    width: 100%;              /* Ocupa todo el ancho disponible */
+    height: 180%;    
+}
+
+.logo-icon img {
+    height: 90px; 
+    align-items: center;         
+    width: auto;           
+    display: block;
+    object-fit: contain;
+    margin: auto;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    justify-content: center;
+    flex: 1;
+    gap: 30%;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-links a:hover{
+    opacity: 1;
+}
 footer{
     width: 100%;
     padding: 50px 0px;
